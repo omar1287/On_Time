@@ -55,7 +55,7 @@ class Notifications extends StatelessWidget {
                             children: [
                               const CircleAvatar(
                                 backgroundImage: AssetImage('Assets/Images/Man.png'),
-                                radius: 40,
+                                radius: 35,
                               ),
                               const SizedBox(
                                   width: 15,
@@ -104,7 +104,7 @@ class Notifications extends StatelessWidget {
                         children: [
                           const CircleAvatar(
                             backgroundImage: AssetImage('Assets/Images/Man.png'),
-                            radius: 40,
+                            radius: 35,
                           ),
                           const SizedBox(
                             width: 15,
@@ -161,7 +161,7 @@ class Notifications extends StatelessWidget {
                         children: [
                           const CircleAvatar(
                             backgroundImage: AssetImage('Assets/Images/Man.png'),
-                            radius: 40,
+                            radius: 35,
                           ),
                           const SizedBox(
                             width: 15,
@@ -210,7 +210,7 @@ class Notifications extends StatelessWidget {
                         children: [
                           const CircleAvatar(
                             backgroundImage: AssetImage('Assets/Images/Man.png'),
-                            radius: 40,
+                            radius: 35,
                           ),
                           const SizedBox(
                             width: 15,
