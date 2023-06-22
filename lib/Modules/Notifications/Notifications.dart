@@ -89,7 +89,7 @@ class Notifications extends StatelessWidget {
 
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Card(
@@ -138,7 +138,7 @@ class Notifications extends StatelessWidget {
 
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               const Text('Yesterday',style: TextStyle(
@@ -146,7 +146,7 @@ class Notifications extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   color: Colors.grey
               ),),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Card(
@@ -195,7 +195,7 @@ class Notifications extends StatelessWidget {
 
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Card(
