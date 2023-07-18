@@ -12,7 +12,7 @@ class HomeCubit extends Cubit<HomeState>{
   bool  checkOutDate=false;
   bool  checkInDate=false;
   int count =0;
-
+bool navTask=false;
   void changeColor(){
     count++;
    if(count<=2){
@@ -30,6 +30,9 @@ if(changeColorButtonChick && !changeColorButtonChick){}
      emit(ChangeColorChickIn());
    }
   }
-
+void changeScreenTask(){
+    navTask=true;
+    emit(ChangeScreenTask());
+}
 
 }

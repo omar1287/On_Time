@@ -28,4 +28,8 @@ List<Widget> screens=[
   const Attendance(),
   const More(),
 ];
+  void changeScreenTask(){
+    currentIndex=2;
+    emit(ChangeScreenTaskState());
+  }
 }
