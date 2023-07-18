@@ -28,8 +28,8 @@ class Home extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            const Row(
-                              children: [
+                            Row(
+                              children: const [
                                 Text(
                                   'Attendance',
                                   style: TextStyle(

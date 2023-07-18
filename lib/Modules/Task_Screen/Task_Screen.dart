@@ -6,7 +6,7 @@ class Task extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  const Scaffold(
-      body: Center(child: Text("Task"),),
-    );
+      body: Center(child: Text("Task")),
+    );;
   }
 }
