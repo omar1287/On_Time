@@ -7,6 +7,9 @@ import 'package:on_time/Modules/Home_Screen/Home_Screen.dart';
 import 'package:on_time/Modules/Layout/Bloc_Layout/State.dart';
 import 'package:on_time/Modules/More_Screen/More_Screen.dart';
 import 'package:on_time/Modules/Task_Screen/Task_Screen.dart';
+import 'package:on_time/Modules/Task_Screen/details_screen/details_task_on_going.dart';
+
+import '../../to_do_list/to_do_list.dart';
 
 class LayerBloc extends Cubit<LayoutState>{
 
@@ -21,7 +24,7 @@ class LayerBloc extends Cubit<LayoutState>{
 List<Widget> screens=[
   const Home(),
   const Chat(),
-  const Task(),
+  const ToDoList(),
   const Attendance(),
   const More(),
 ];

@@ -45,24 +45,24 @@ class Notifications extends StatelessWidget {
               ),
               Card(
                 color: Colors.grey[200],
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
+                child: const Padding(
+                  padding: EdgeInsets.all(8.0),
                   child:
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Row(
                             children: [
-                              const CircleAvatar(
+                              CircleAvatar(
                                 backgroundImage: AssetImage('Assets/Images/Man.png'),
                                 radius: 35,
                               ),
-                              const SizedBox(
+                              SizedBox(
                                   width: 15,
 
                               ),
                               Column(
-                                children: const [
+                                children: [
 
                                      Text('Mohamed Salah',style: TextStyle(
                                         fontSize: 18,
@@ -74,10 +74,10 @@ class Notifications extends StatelessWidget {
                               )
                             ],
                           ),
-                          const SizedBox(
+                          SizedBox(
                             height: 15,
                           ),
-                          const Text('Lorem Ipsum is simply dummy text of the type setting industry.Lorem Ipsum is simply dummy text of the printing and typesetting.',style: TextStyle(
+                          Text('Lorem Ipsum is simply dummy text of the type setting industry.Lorem Ipsum is simply dummy text of the printing and typesetting.',style: TextStyle(
                             color: Colors.black54,
                             fontSize: 17
 
@@ -94,24 +94,24 @@ class Notifications extends StatelessWidget {
               ),
               Card(
                 color: Colors.grey[200],
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
+                child: const Padding(
+                  padding: EdgeInsets.all(8.0),
                   child:
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Row(
                         children: [
-                          const CircleAvatar(
+                          CircleAvatar(
                             backgroundImage: AssetImage('Assets/Images/Man.png'),
                             radius: 35,
                           ),
-                          const SizedBox(
+                          SizedBox(
                             width: 15,
 
                           ),
                           Column(
-                            children: const [
+                            children: [
 
                               Text('Mohamed Salah',style: TextStyle(
                                   fontSize: 18,
@@ -123,10 +123,10 @@ class Notifications extends StatelessWidget {
                           )
                         ],
                       ),
-                      const SizedBox(
+                      SizedBox(
                         height: 15,
                       ),
-                      const Text('Lorem Ipsum is simply dummy text of the type setting industry.Lorem Ipsum is simply dummy text of the printing and typesetting.',style: TextStyle(
+                      Text('Lorem Ipsum is simply dummy text of the type setting industry.Lorem Ipsum is simply dummy text of the printing and typesetting.',style: TextStyle(
                           color: Colors.black54,
                           fontSize: 17
 
@@ -151,24 +151,24 @@ class Notifications extends StatelessWidget {
               ),
               Card(
                 color: Colors.grey[200],
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
+                child: const Padding(
+                  padding: EdgeInsets.all(8.0),
                   child:
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Row(
                         children: [
-                          const CircleAvatar(
+                          CircleAvatar(
                             backgroundImage: AssetImage('Assets/Images/Man.png'),
                             radius: 35,
                           ),
-                          const SizedBox(
+                          SizedBox(
                             width: 15,
 
                           ),
                           Column(
-                            children: const [
+                            children: [
 
                               Text('Mohamed Salah',style: TextStyle(
                                   fontSize: 18,
@@ -180,10 +180,10 @@ class Notifications extends StatelessWidget {
                           )
                         ],
                       ),
-                      const SizedBox(
+                      SizedBox(
                         height: 15,
                       ),
-                      const Text('Lorem Ipsum is simply dummy text of the type setting industry.Lorem Ipsum is simply dummy text of the printing and typesetting.',style: TextStyle(
+                      Text('Lorem Ipsum is simply dummy text of the type setting industry.Lorem Ipsum is simply dummy text of the printing and typesetting.',style: TextStyle(
                           color: Colors.black54,
                           fontSize: 17
 
@@ -200,24 +200,24 @@ class Notifications extends StatelessWidget {
               ),
               Card(
                 color: Colors.grey[200],
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
+                child: const Padding(
+                  padding: EdgeInsets.all(8.0),
                   child:
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Row(
                         children: [
-                          const CircleAvatar(
+                          CircleAvatar(
                             backgroundImage: AssetImage('Assets/Images/Man.png'),
                             radius: 35,
                           ),
-                          const SizedBox(
+                          SizedBox(
                             width: 15,
 
                           ),
                           Column(
-                            children: const [
+                            children: [
 
                               Text('Mohamed Salah',style: TextStyle(
                                   fontSize: 18,
@@ -229,10 +229,10 @@ class Notifications extends StatelessWidget {
                           )
                         ],
                       ),
-                      const SizedBox(
+                      SizedBox(
                         height: 15,
                       ),
-                      const Text('Lorem Ipsum is simply dummy text of the type setting industry.Lorem Ipsum is simply dummy text of the printing and typesetting.',style: TextStyle(
+                      Text('Lorem Ipsum is simply dummy text of the type setting industry.Lorem Ipsum is simply dummy text of the printing and typesetting.',style: TextStyle(
                           color: Colors.black54,
                           fontSize: 17
 
