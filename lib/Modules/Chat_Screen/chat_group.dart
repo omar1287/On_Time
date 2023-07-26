@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'package:on_time/Modules/Chat_Screen/widgets/appbar.dart';
 import 'package:on_time/Modules/Chat_Screen/widgets/build_message.dart';
 import 'package:on_time/Modules/Chat_Screen/widgets/build_message_from_user.dart';
 import 'package:on_time/Modules/Task_Screen/details_screen/manager/details_cubit.dart';
 
 import '../../core/utils/app_styles.dart';
-import '../Notifications/Notifications.dart';
-import 'individual_call.dart';
+
 
 class ChatIndividual extends StatelessWidget {
   const ChatIndividual({Key? key}) : super(key: key);
@@ -15,7 +13,8 @@ class ChatIndividual extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(context, 'Flutter Developer', '4 members'),
+      appBar: buildAppBar(context, 'Flutter Developer', '4 members',
+          (){}),
       body: const Padding(
         padding: EdgeInsets.all(24.0),
         child: Column(
@@ -31,7 +30,7 @@ class ChatIndividual extends StatelessWidget {
         children: [
           const Icon(Icons.emoji_emotions),
           DetailsCubit().buildSizedBoxWidth(16),
-          Container(
+          SizedBox(
             width: 222,
             height: 50,
             child: TextFormField(

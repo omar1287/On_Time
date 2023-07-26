@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:on_time/Modules/Task_Screen/details_screen/manager/details_cubit.dart';
 import 'package:on_time/core/utils/app_styles.dart';
 class IndividualCall extends StatelessWidget {

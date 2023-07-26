@@ -1,21 +1,37 @@
+import 'package:agora_rtc_engine/agora_rtc_engine.dart';
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
+import 'package:on_time/Modules/Chat_Screen/individual_call.dart';
 import 'package:on_time/Modules/Chat_Screen/widgets/appbar.dart';
 import 'package:on_time/Modules/Chat_Screen/widgets/build_message.dart';
 import 'package:on_time/Modules/Chat_Screen/widgets/build_message_from_user.dart';
 import 'package:on_time/Modules/Task_Screen/details_screen/manager/details_cubit.dart';
 
 import '../../core/utils/app_styles.dart';
-import '../Notifications/Notifications.dart';
-import 'individual_call.dart';
 
-class ChatIndividual extends StatelessWidget {
+class ChatIndividual extends StatefulWidget {
   const ChatIndividual({Key? key}) : super(key: key);
+
+  @override
+  State<ChatIndividual> createState() => _ChatIndividualState();
+}
+
+class _ChatIndividualState extends State<ChatIndividual> {
+  @override
+  void initState() {
+    super.initState();
+  }
+  late RtcEngine agoraEngine;
+  String channelName = "test";
+  String token = "token";
+  String appId = "4a20a6f8b06a4eb6a15de1a9e0027e08";
+  int uid = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(context, 'Mostafa', 'Online'),
+      appBar: buildAppBar(context, 'Mostafa', 'Online',(){
+        join();
+      }),
       body: const Padding(
         padding: EdgeInsets.all(24.0),
         child: Column(
@@ -62,8 +78,23 @@ class ChatIndividual extends StatelessWidget {
       ),
     );
   }
+  void  join() async {
 
+    // Set channel options including the client role and channel profile
+    ChannelMediaOptions options = const ChannelMediaOptions(
+      clientRoleType: ClientRoleType.clientRoleBroadcaster,
+      channelProfile: ChannelProfileType.channelProfileCommunication,
+    );
 
+    await agoraEngine.joinChannel(
+      token: token,
+      channelId: channelName,
+      options: options,
+      uid: uid,
+    );
+    // ignore: use_build_context_synchronously
+    Navigator.push(context, MaterialPageRoute(builder: (context) => const IndividualCall()));
+  }
 }
 
 

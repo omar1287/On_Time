@@ -77,9 +77,9 @@ class Task extends StatelessWidget {
                                 onPressed: () {},
                                 style: ElevatedButton.styleFrom(
                                     backgroundColor: HexColor('#034488')),
-                                child: Column(
+                                child: const Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
-                                  children: const [
+                                  children: [
                                     Text(
                                       '6',
                                       style: TextStyle(color: Colors.white),
@@ -104,9 +104,9 @@ class Task extends StatelessWidget {
                                     side: BorderSide(
                                         width: 0.8,
                                         color: HexColor('#034488'))),
-                                child: Column(
+                                child: const Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
-                                  children: const [
+                                  children: [
                                     Text(
                                       '7',
                                       style: TextStyle(color: Colors.black87),
@@ -133,9 +133,9 @@ class Task extends StatelessWidget {
                                     side: BorderSide(
                                         width: 0.8,
                                         color: HexColor('#034488'))),
-                                child: Column(
+                                child: const Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
-                                  children: const [
+                                  children: [
                                     Text(
                                       '8',
                                       style: TextStyle(color: Colors.black87),
@@ -162,9 +162,9 @@ class Task extends StatelessWidget {
                                     side: BorderSide(
                                         width: 0.8,
                                         color: HexColor('#034488'))),
-                                child: Column(
+                                child: const Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
-                                  children: const [
+                                  children: [
                                     Text(
                                       '9',
                                       style: TextStyle(color: Colors.black87),
@@ -191,9 +191,9 @@ class Task extends StatelessWidget {
                                     side: BorderSide(
                                         width: 0.8,
                                         color: HexColor('#034488'))),
-                                child: Column(
+                                child: const Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
-                                  children: const [
+                                  children: [
                                     Text(
                                       '10',
                                       style: TextStyle(color: Colors.black87),
@@ -220,9 +220,9 @@ class Task extends StatelessWidget {
                                     side: BorderSide(
                                         width: 0.8,
                                         color: HexColor('#034488'))),
-                                child: Column(
+                                child: const Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
-                                  children: const [
+                                  children: [
                                     Text(
                                       '11',
                                       style: TextStyle(color: Colors.black87),
@@ -249,9 +249,9 @@ class Task extends StatelessWidget {
                                     side: BorderSide(
                                         width: 0.8,
                                         color: HexColor('#034488'))),
-                                child: Column(
+                                child: const Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
-                                  children: const [
+                                  children: [
                                     Text(
                                       '12',
                                       style: TextStyle(color: Colors.black87),
@@ -412,8 +412,8 @@ class Task extends StatelessWidget {
                                       const SizedBox(
                                         height: 15,
                                       ),
-                                      Row(
-                                        children: const [
+                                      const Row(
+                                        children: [
                                           Icon(
                                             Icons.watch_later_outlined,
                                             color: Colors.black87,
@@ -550,8 +550,8 @@ class Task extends StatelessWidget {
                                       const SizedBox(
                                         height: 15,
                                       ),
-                                      Row(
-                                        children: const [
+                                      const Row(
+                                        children: [
                                           Icon(
                                             Icons.watch_later_outlined,
                                             color: Colors.black87,
@@ -694,28 +694,28 @@ class Task extends StatelessWidget {
                                       const SizedBox(
                                         height: 15,
                                       ),
-                                      Row(
+                                      const Row(
                                         children: [
-                                          const Icon(
+                                          Icon(
                                             Icons.watch_later_outlined,
                                             color: Colors.black87,
                                             size: 40,
                                           ),
-                                          const SizedBox(
+                                          SizedBox(
                                             width: 10,
                                           ),
-                                          const Text(
+                                          Text(
                                             '09:00 AM - 11:00 AM',
                                             style: TextStyle(
                                                 fontSize: 18,
                                                 color: Colors.grey),
                                           ),
-                                          const Spacer(),
+                                          Spacer(),
                                           Row(
                                             children: [
                                               Stack(
                                                 clipBehavior: Clip.none,
-                                                children: const [
+                                                children: [
                                                   Positioned(
                                                     child: CircleAvatar(
                                                       backgroundImage: AssetImage(
@@ -826,8 +826,8 @@ class Task extends StatelessWidget {
                                             const SizedBox(
                                               height: 15,
                                             ),
-                                            Row(
-                                              children: const [
+                                            const Row(
+                                              children: [
                                                 Icon(
                                                   Icons.watch_later_outlined,
                                                   color: Colors.black87,
@@ -976,8 +976,8 @@ class Task extends StatelessWidget {
                                         const SizedBox(
                                           height: 15,
                                         ),
-                                        Row(
-                                          children: const [
+                                        const Row(
+                                          children: [
                                             Icon(
                                               Icons.watch_later_outlined,
                                               color: Colors.black87,
@@ -1140,28 +1140,28 @@ class Task extends StatelessWidget {
                                             const SizedBox(
                                               height: 15,
                                             ),
-                                            Row(
+                                            const Row(
                                               children: [
-                                                const Icon(
+                                                Icon(
                                                   Icons.watch_later_outlined,
                                                   color: Colors.black87,
                                                   size: 40,
                                                 ),
-                                                const SizedBox(
+                                                SizedBox(
                                                   width: 10,
                                                 ),
-                                                const Text(
+                                                Text(
                                                   '09:00 AM - 11:00 AM',
                                                   style: TextStyle(
                                                       fontSize: 18,
                                                       color: Colors.grey),
                                                 ),
-                                                const Spacer(),
+                                                Spacer(),
                                                 Row(
                                                   children: [
                                                     Stack(
                                                       clipBehavior: Clip.none,
-                                                      children: const [
+                                                      children: [
                                                         Positioned(
                                                           child: CircleAvatar(
                                                             backgroundImage:

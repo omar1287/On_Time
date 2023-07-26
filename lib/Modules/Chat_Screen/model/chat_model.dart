@@ -16,8 +16,8 @@ class ChatModel {
 
   Map<String, dynamic> toJson() {
     return {
-      "title": this.title,
-      "desc": this.desc,
+      "title": title,
+      "desc": desc,
     };
   }
 

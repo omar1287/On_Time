@@ -31,7 +31,7 @@ class CalendarField extends StatelessWidget {
                 ),
                 hintText: hintDate,
                 hintStyle: AppStyles.textStyle14,
-                suffixIcon: Icon(
+                suffixIcon: const Icon(
                     Icons.date_range
                 )
             ),

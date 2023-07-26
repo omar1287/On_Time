@@ -1,4 +1,3 @@
-import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:on_time/Modules/Attendance_Screen/Attendance_Screen.dart';
@@ -6,8 +5,6 @@ import 'package:on_time/Modules/Chat_Screen/Chat_Screen.dart';
 import 'package:on_time/Modules/Home_Screen/Home_Screen.dart';
 import 'package:on_time/Modules/Layout/Bloc_Layout/State.dart';
 import 'package:on_time/Modules/More_Screen/More_Screen.dart';
-import 'package:on_time/Modules/Task_Screen/Task_Screen.dart';
-import 'package:on_time/Modules/Task_Screen/details_screen/details_task_on_going.dart';
 
 import '../../to_do_list/to_do_list.dart';
 

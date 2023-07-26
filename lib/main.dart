@@ -1,17 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:on_time/Modules/Layout/Layout.dart';
+import 'package:on_time/core/bloc_observer.dart';
 
-import 'Modules/to_do_list/to_do_list.dart';
+import 'Modules/Layout/Layout.dart';
+import 'core/data/data_providers/local/cache_helper.dart';
+import 'core/data/data_providers/remote/dio_helper.dart';
+import 'core/utils/app_constant.dart';
+
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-    systemNavigationBarColor: Color(0xFF034488),
-    statusBarColor: Color(0xFF034488)
-  ));
-  runApp(const MyApp());
+  BlocOverrides.runZoned(
+          () async {
+            DioHelper.init();
+            await CacheHelper.init();
+            runApp(const MyApp());
+          },
+  blocObserver: MyBlocObserver(),
+  );
+
 }
 
 class MyApp extends StatelessWidget {
@@ -25,7 +34,17 @@ class MyApp extends StatelessWidget {
         splitScreenMode: true,
       builder: (context, child) {
         return MaterialApp(
-          theme: ThemeData(),
+          theme: ThemeData(
+            appBarTheme:  const AppBarTheme(
+              elevation: 0.0,
+              color: AppConstance.primaryColor,
+              systemOverlayStyle: SystemUiOverlayStyle(
+                statusBarColor: AppConstance.primaryColor,
+                statusBarIconBrightness: Brightness.light,
+                systemNavigationBarColor: AppConstance.primaryColor
+              ),
+            ),
+          ),
           home: const Layout(),
           debugShowCheckedModeBanner: false,
         );

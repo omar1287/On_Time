@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 import '../../../core/utils/app_styles.dart';
-import '../individual_call.dart';
 
-AppBar buildAppBar(BuildContext context,String title, String subTitle) {
+AppBar buildAppBar(BuildContext context,String title, String subTitle, Function()? onPress) {
   return AppBar(
     backgroundColor: HexColor('#034488'),
     elevation: 0,
@@ -24,7 +23,7 @@ AppBar buildAppBar(BuildContext context,String title, String subTitle) {
         onPressed: () {},
         icon: IconButton(
           onPressed: (){
-            Navigator.of(context).push(MaterialPageRoute(builder: (context) => const IndividualCall()));
+            onPress;
           },
           icon: const Icon(
             Icons.phone,

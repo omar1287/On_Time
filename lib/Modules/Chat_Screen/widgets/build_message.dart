@@ -26,7 +26,7 @@ class BuildMessage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const SizedBox(height: 10),
-              Container(
+              SizedBox(
                 width: 234,
                 height: 106,
                 child:  Stack(

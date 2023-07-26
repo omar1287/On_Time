@@ -28,8 +28,8 @@ class Home extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Row(
-                              children: const [
+                            const Row(
+                              children: [
                                 Text(
                                   'Attendance',
                                   style: TextStyle(
@@ -56,8 +56,8 @@ class Home extends StatelessWidget {
                             const SizedBox(
                               height: 15,
                             ),
-                            Row(
-                              children: const [
+                            const Row(
+                              children: [
                                 Image(
                                   image: AssetImage('Assets/Images/Sun.png'),
                                   height: 25,
@@ -443,8 +443,8 @@ class Home extends StatelessWidget {
                     const SizedBox(
                       height: 25,
                     ),
-                    Row(
-                      children: const [
+                    const Row(
+                      children: [
                         Text(
                           'Task Progress',
                           style: TextStyle(
@@ -470,8 +470,8 @@ class Home extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Row(
-                              children: const [
+                            const Row(
+                              children: [
                                 Text(
                                   'Website Development',
                                   style: TextStyle(
@@ -530,8 +530,8 @@ class Home extends StatelessWidget {
                             const SizedBox(
                               height: 20,
                             ),
-                            Row(
-                              children: const [
+                            const Row(
+                              children: [
                                 Icon(
                                   Icons.watch_later_outlined,
                                   color: Colors.black87,
@@ -590,8 +590,8 @@ class Home extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Row(
-                              children: const [
+                            const Row(
+                              children: [
                                 Text(
                                   'Website Development',
                                   style: TextStyle(
@@ -650,8 +650,8 @@ class Home extends StatelessWidget {
                             const SizedBox(
                               height: 20,
                             ),
-                            Row(
-                              children: const [
+                            const Row(
+                              children: [
                                 Icon(
                                   Icons.watch_later_outlined,
                                   color: Colors.black87,
@@ -720,21 +720,21 @@ class Home extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Row(
+                            const Row(
                               children: [
-                                const Text(
+                                Text(
                                   'Web Design',
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 18,
                                       color: Colors.black87),
                                 ),
-                                const Spacer(),
+                                Spacer(),
                                 Row(
                                   children: [
                                     Stack(
                                       clipBehavior: Clip.none,
-                                      children: const [
+                                      children: [
                                         Positioned(
                                           child: CircleAvatar(
                                             backgroundImage: AssetImage(
@@ -785,8 +785,8 @@ class Home extends StatelessWidget {
                             const SizedBox(
                               height: 12,
                             ),
-                            Row(
-                              children: const [
+                            const Row(
+                              children: [
                                 Icon(
                                   Icons.watch_later_outlined,
                                   color: Colors.black87,
@@ -845,21 +845,21 @@ class Home extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Row(
+                            const Row(
                               children: [
-                                const Text(
+                                Text(
                                   'Web Design',
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 18,
                                       color: Colors.black87),
                                 ),
-                                const Spacer(),
+                                Spacer(),
                                 Row(
                                   children: [
                                     Stack(
                                       clipBehavior: Clip.none,
-                                      children: const [
+                                      children: [
                                         Positioned(
                                           child: CircleAvatar(
                                             backgroundImage: AssetImage(
@@ -910,8 +910,8 @@ class Home extends StatelessWidget {
                             const SizedBox(
                               height: 12,
                             ),
-                            Row(
-                              children: const [
+                            const Row(
+                              children: [
                                 Icon(
                                   Icons.watch_later_outlined,
                                   color: Colors.black87,
