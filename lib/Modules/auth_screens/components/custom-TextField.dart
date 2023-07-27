@@ -9,7 +9,7 @@ import '../../../auth_presentation/resources/values_manager.dart';
 
 class customField extends StatelessWidget {
 
-   customField({this.hintText,this.numForm,this.valid,this.controller,this.onChanged,this.suffix, this.icon,required this.keyboardType,this.obs=false,});
+   customField({this.hintText,this.numForm,this.valid,this.controller,this.onChanged,this.suffix, this.icon, this.keyboardType,this.obs=false,});
 
     String? hintText;
     Function(String)? onChanged;
@@ -19,7 +19,7 @@ class customField extends StatelessWidget {
    int? numForm;
    String? Function(String?)? valid;
    TextEditingController? controller;
-   TextInputType keyboardType;
+   TextInputType? keyboardType;
   @override
 
   Widget build(BuildContext context) {
@@ -38,14 +38,13 @@ class customField extends StatelessWidget {
             keyboardType: keyboardType,
             controller: controller,
             obscureText: obs!,
-
             validator: valid,
             cursorColor: ColorManager.lightGrey,
             style:  getRegularStyle(
               color: ColorManager.grey,
               fontSize: AppSize.s16,
             ),
-            onChanged: onChanged,
+
             decoration: InputDecoration(
               errorStyle:   TextStyle(color: Colors.red,backgroundColor: ColorManager.whiteF5,fontFamily: "NunitoSans",fontWeight: FontWeight.w600,),
               prefixIcon: icon,

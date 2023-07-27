@@ -98,6 +98,7 @@ class LoginView extends StatelessWidget {
                           customField(
                             obs: false,
                             numForm: 34,
+
                             hintText: AppStrings.enterEmail,
                             valid: (value) {
                               if (value!.isEmpty) {
