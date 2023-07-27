@@ -1,19 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:on_time/Modules/Layout/Layout.dart';
-import 'package:on_time/Modules/auth_screens/splash_screen/SplashView.dart';
 
-import 'Modules/to_do_list/to_do_list.dart';
 import 'auth_presentation/resources/routes_manager.dart';
+import 'core/bloc_observer.dart';
+import 'core/data/data_providers/local/cache_helper.dart';
+import 'core/data/data_providers/remote/dio_helper.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-    systemNavigationBarColor: Color(0xFF034488),
-    statusBarColor: Color(0xFF034488),
-  ));
-  runApp(const MyApp());
+  BlocOverrides.runZoned(
+        () async {
+      DioHelper.init();
+      await CacheHelper.init();
+      runApp(const MyApp());
+    },
+    blocObserver: MyBlocObserver(),
+  );
+
 }
 
 class MyApp extends StatelessWidget {

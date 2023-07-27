@@ -23,7 +23,7 @@ class AttendencePerDay extends StatelessWidget {
           activeBackgroundDayColor: Colors.blueAccent,
           dotsColor: const Color(0xFF333A47),
           selectableDayPredicate: (date) => date.day != 23,
-          locale: 'en_ISO',
+          locale: 'ar_ISO',
         ),
         DetailsCubit().buildSizedBox(16),
         Container(

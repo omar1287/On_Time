@@ -1,8 +1,6 @@
-import 'package:calendar_timeline/calendar_timeline.dart';
 import 'package:flutter/material.dart';
 import 'package:on_time/Modules/Attendance_Screen/widgets/row_of_widget.dart';
 import 'package:on_time/Modules/Task_Screen/details_screen/manager/details_cubit.dart';
-import 'package:on_time/core/utils/app_styles.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 import 'details_per_day.dart';

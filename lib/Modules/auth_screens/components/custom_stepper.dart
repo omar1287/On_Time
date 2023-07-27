@@ -1,11 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../auth_presentation/resources/color_manager.dart';
-import '../../../auth_presentation/resources/routes_manager.dart';
-import '../../../auth_presentation/resources/string_manager.dart';
-import '../../../auth_presentation/resources/styles_manager.dart';
-import '../../../auth_presentation/resources/values_manager.dart';
-import '../cubit/AuthCubit.dart';
-import '../cubit/AuthState.dart';
+
 
 class CustomStepper extends StatelessWidget {
   const CustomStepper({Key? key}) : super(key: key);
