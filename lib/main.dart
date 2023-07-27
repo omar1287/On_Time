@@ -7,16 +7,12 @@ import 'core/bloc_observer.dart';
 import 'core/data/data_providers/local/cache_helper.dart';
 import 'core/data/data_providers/remote/dio_helper.dart';
 
-void main() {
+void main() async{
   WidgetsFlutterBinding.ensureInitialized();
-  BlocOverrides.runZoned(
-        () async {
       DioHelper.init();
       await CacheHelper.init();
       runApp(const MyApp());
-    },
-    blocObserver: MyBlocObserver(),
-  );
+    Bloc.observer = MyBlocObserver();
 
 }
 

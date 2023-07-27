@@ -1,6 +1,5 @@
 import '../../../../core/errors/failures.dart';
 
-abstract class AttendenceRepo {
-
+abstract class AttendanceRepo {
 
 }

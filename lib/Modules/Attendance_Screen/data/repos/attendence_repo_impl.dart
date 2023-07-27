@@ -2,9 +2,9 @@ import 'package:on_time/Modules/Attendance_Screen/data/repos/attendence_repo.dar
 
 import '../../../../core/data/data_providers/remote/dio_helper.dart';
 
-class AttendenceRepoImpl extends AttendenceRepo {
+class AttendanceRepoImpl extends AttendanceRepo {
   final DioHelper dioHelper;
 
-  AttendenceRepoImpl(this.dioHelper);
+  AttendanceRepoImpl(this.dioHelper);
 
 }
